@@ -1,0 +1,371 @@
+*{
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+:root{
+    --secondary-color:#ff3d5a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1{
+    position: absolute;
+    text-align: start;
+    font: bolder;
+}
+
+header nav {
+    justify-content: end;
+}
+
+header a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+nav a {
+    color: white;
+    margin: 0 15px;
+}
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.hero-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-size: cover;
+    background-image: url('/images/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 20px; /* Optional: Adjust padding as needed */
+    color:white;
+
+}
+
+.hero {
+    /* background: url(); */
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: auto;
+}
+
+.hero h2 {
+    color: var(--secondary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh; /* Example fixed height */
+    object-fit: cover; /* or contain, fill, scale-down, none */
+    border-radius: 10px;
+}
+
+.pilau img{
+    max-width: 100%;
+}
+
+/* section img{
+    max-width: 95%;
+} */
+  
+
+.introduction {
+    padding: 20px;
+    text-align: center;
+}
+
+.introduction p, p {
+    word-spacing: 4px;
+    font-size: larger;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /* position: relative;
+    bottom: 0; */
+    width: 100%;
+    margin-top: auto
+}
+
+footer a img{
+    border-radius: 5px;
+}
+
+
+.footerlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerlinks a {
+    margin: 0 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about img{
+    width: 95%;
+    height: 50%;
+}
+
+.skills-list {
+    padding: 0;
+}
+
+.menu-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-page img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+  
+
+.ingredients, .instructions {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .card-container, .hero-intro {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: url('/images/background.jpg');
+    background-size: cover;
+  }
+  .card-container{
+    min-height: 90vh;
+  }
+
+  .card {
+    /* background: transparent; */
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .card img {
+    z-index: -1;
+    width: 100%;
+    /* max-height: 150px; */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    margin: 15px 0 10px;
+    color: var(--secondary-color);
+  }
+
+  header h1, h3{
+    color: var(--secondary-color);
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .skills {
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .skills .card {
+    width: fit-content;
+    margin: 10px;
+  }
+
+
+  .meal_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .left {
+    grid-row: span 2;
+    background: #f44336;
+    min-height: 300px; /* X */
+  }
+
+  .top-right,
+  .bottom-right {
+    background: #2196F3;
+    min-height: 150px; /* X/2 */
+  }
+
+
+  /* button */
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* height: 100vh; */
+    /* background: #f5f5f5; */
+}
+
+.btn-container a{
+    text-decoration: none;
+}
+
+.rotating-btn {
+    position: relative;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff3d5a, #ff8a5b);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.rotating-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rotating-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff3d5a, #ff8a5b, #ff3d5a, #ff8a5b);
+    background-size: 400%;
+    border-radius: 50px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.rotating-btn:hover::before {
+    opacity: 1;
+    animation: rotateBorder 3s linear infinite;
+}
+
+.ingredients{
+    list-style: circle;
+}
+.instructions{
+    list-style: decimal;
+}
+
+@keyframes rotateBorder {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+  /* Responsive Layout */
+  @media (max-width: 600px) {
+    .meal_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left,
+    .top-right,
+    .bottom-right {
+      min-height: 200px; /* Adjust for mobile */
+      width: 100%;
+    }
+
+    .hero {
+        height: 250px;
+    }
+  
+    .cta-button {
+        width: 100%;
+    }
+
+  }
